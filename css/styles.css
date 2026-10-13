@@ -349,7 +349,7 @@ main > :last-child {
   gap: var(--space-xl);
 }
 
-.destacados.grid,
+.destacados .grid,
 .ofertas.grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -381,7 +381,7 @@ main > :last-child {
   box-shadow: var(--shadow-xl);
 }
 
-.tarjeta.imagen {
+.tarjeta .imagen {
   aspect-ratio: 1 / 1;
   width: 100%;
   background: var(--color-surface-container-low);
@@ -391,24 +391,24 @@ main > :last-child {
   overflow: hidden;
 }
 
-.tarjeta.imagen img {
+.tarjeta .imagen img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-.tarjeta.imagen img:hover {
+.tarjeta .imagen img:hover {
   transform: scale(1.05);
 }
 
-.tarjeta.info {
+.tarjeta .info {
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
 }
 
-.tarjeta.nombre {
+.tarjeta .nombre {
   font-family: var(--font-body);
   font-size: 14px;
   line-height: 20px;
@@ -417,7 +417,7 @@ main > :last-child {
   text-transform: uppercase;
 }
 
-.tarjeta.precio {
+.tarjeta .precio {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 24px;
@@ -425,13 +425,13 @@ main > :last-child {
   color: var(--color-on-surface-variant);
 }
 
-.tarjeta.precios {
+.tarjeta .precios {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
 }
 
-.tarjeta.anterior {
+.tarjeta .anterior {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 24px;
@@ -464,7 +464,7 @@ main > :last-child {
   background-color: var(--color-inverse-surface);
 }
 
-.tarjeta.boton {
+.tarjeta .boton {
   width: 100%;
   padding: var(--space-sm) 0;
 }
@@ -478,7 +478,7 @@ main > :last-child {
   gap: var(--space-xl);
 }
 
-.servicios.grid {
+.servicios .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-lg);
@@ -490,7 +490,7 @@ main > :last-child {
   }
 }
 
-.servicios.tarjeta {
+.servicios .tarjeta {
   background: var(--color-surface);
   padding: var(--space-xl);
   display: flex;
@@ -500,17 +500,17 @@ main > :last-child {
   transition: transform 0.3s ease;
 }
 
-.servicios.tarjeta:hover {
+.servicios .tarjeta:hover {
   transform: translateY(-8px);
 }
 
-.servicios.tarjeta.invertida {
+.servicios .tarjeta .invertida {
   background: var(--color-primary);
   color: var(--color-on-primary);
   box-shadow: var(--shadow-xl);
 }
 
-.tarjeta.icono {
+.tarjeta .icono {
   width: 64px;
   height: 64px;
   background: var(--color-primary);
@@ -523,16 +523,16 @@ main > :last-child {
   box-shadow: var(--shadow-md);
 }
 
-.tarjeta.icono.simbolo {
+.tarjeta .icono .simbolo {
   font-size: 32px;
 }
 
-.tarjeta.invertida.icono {
+.tarjeta .invertida .icono {
   background: var(--color-surface);
   color: var(--color-on-surface);
 }
 
-.tarjeta.titulo {
+.tarjeta .titulo {
   font-family: var(--font-display);
   font-size: 24px;
   line-height: 28px;
@@ -541,11 +541,11 @@ main > :last-child {
   color: var(--color-on-surface);
 }
 
-.tarjeta.invertida.titulo {
+.tarjeta .invertida .titulo {
   color: var(--color-on-primary);
 }
 
-.tarjeta.texto {
+.tarjeta .texto {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 24px;
@@ -553,7 +553,7 @@ main > :last-child {
   color: var(--color-on-surface-variant);
 }
 
-.tarjeta.invertida.texto {
+.tarjeta .invertida .texto {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -566,7 +566,7 @@ main > :last-child {
   justify-content: center;
 }
 
-.contacto.interior {
+.contacto .interior {
   width: 100%;
   max-width: 48rem;
   display: flex;
@@ -574,14 +574,14 @@ main > :last-child {
   gap: var(--space-xl);
 }
 
-.contacto.cabecera {
+.contacto .cabecera {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
   text-align: center;
 }
 
-.contacto.cabecera.titulo {
+.contacto .cabecera .titulo {
   font-family: var(--font-display);
   font-size: 80px;
   line-height: 1;
@@ -590,7 +590,7 @@ main > :last-child {
   text-transform: uppercase;
 }
 
-.contacto.subtitulo {
+.contacto .subtitulo {
   font-family: var(--font-body);
   font-size: 18px;
   line-height: 28px;
@@ -607,19 +607,19 @@ main > :last-child {
   box-shadow: var(--shadow-xl);
 }
 
-.formulario.fila {
+.formulario .fila {
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
 }
 
 @media (min-width: 768px) {
- .formulario.fila {
+ .formulario .fila {
     flex-direction: row;
   }
 }
 
-.formulario.boton {
+.formulario .boton {
   margin-top: var(--space-md);
   width: 100%;
   align-self: flex-end;
@@ -631,7 +631,7 @@ main > :last-child {
 }
 
 @media (min-width: 768px) {
- .formulario.boton {
+ .formulario .boton {
     width: auto;
   }
 }
@@ -685,7 +685,7 @@ main > :last-child {
   padding-bottom: var(--space-xl);
 }
 
-.pie.interior {
+.pie .interior {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
@@ -693,7 +693,7 @@ main > :last-child {
   padding-right: var(--space-margin-desktop);
 }
 
-.pie.superior {
+.pie .superior {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
@@ -703,31 +703,31 @@ main > :last-child {
 }
 
 @media (min-width: 768px) {
- .pie.superior {
+ .pie .superior {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
-.pie.marca {
+.pie .marca {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
 }
 
-.pie.marca.rayas {
+.pie .marca .rayas {
   display: flex;
   align-items: center;
   gap: var(--space-xs);
   margin-bottom: var(--space-sm);
 }
 
-.pie.marca.rayas div {
+.pie .marca .rayas div {
   width: 4px;
   height: 32px;
   background: var(--color-on-primary);
 }
 
-.pie.marca.lema {
+.pie .marca .lema {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 24px;
@@ -737,13 +737,13 @@ main > :last-child {
   letter-spacing: 0.1em;
 }
 
-.pie.columna {
+.pie .columna {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
 
-.pie.columna.titulo {
+.pie .columna .titulo {
   font-family: var(--font-display);
   font-size: 24px;
   line-height: 28px;
@@ -752,7 +752,7 @@ main > :last-child {
   margin-bottom: var(--space-xs);
 }
 
-.pie.columna a {
+.pie .columna a {
   font-family: var(--font-body);
   font-size: 12px;
   line-height: 16px;
@@ -762,20 +762,20 @@ main > :last-child {
   transition: opacity 0.15s ease;
 }
 
-.pie.columna a:hover {
+.pie .columna a:hover {
   opacity: 1;
 }
 
-.pie.redes {
+.pie .redes {
   display: flex;
   gap: var(--space-md);
 }
 
-.pie.redes.simbolo {
+.pie .redes .simbolo {
   cursor: pointer;
 }
 
-.pie.inferior {
+.pie .inferior {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -790,12 +790,12 @@ main > :last-child {
 }
 
 @media (min-width: 768px) {
- .pie.inferior {
+ .pie .inferior {
     flex-direction: row;
   }
 }
 
-.pie.legal {
+.pie .legal {
   display: flex;
   gap: var(--space-lg);
 }
